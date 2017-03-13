@@ -1,0 +1,14 @@
+.git
+.vagrant
+tags
+.idea
+.gitignore
+.vimrc
+.Vagrantfile
+node_modules
+old
+.compiled
+.public
+npm-debug.log*
+
+

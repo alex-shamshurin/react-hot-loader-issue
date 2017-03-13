@@ -1,0 +1,32 @@
+{
+  "reporter": "stylint-stylish",
+  "reporterOptions": {
+    "absolutePath": true
+  },
+  "noImportant": false,
+  "brackets": {
+    "expect": "never",
+    "error": true
+  },
+  "semicolons": {
+    "expect": "never",
+    "error": false
+  },
+  "colons": {
+    "expect": "never",
+    "error": false
+  },
+  "universal": {
+    "expect": "never",
+    "error": false
+  },
+  "quotePref": {
+    "expect": "double",
+    "error": false
+  },
+  "mixed" : false,
+  "namingConvention" : {
+    "expect": "lowercase-dash",
+    "error": false
+  }
+}

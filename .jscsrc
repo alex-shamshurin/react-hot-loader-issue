@@ -1,0 +1,6 @@
+{
+  "preset": "airbnb",
+  "requireSemicolons": null,
+  "excludeFiles": ["node_modules/**"],
+  "fileExtensions": [".js", ".jsx"]
+}

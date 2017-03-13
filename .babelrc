@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "latest",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-flow-strip-types"
+  ]
+}

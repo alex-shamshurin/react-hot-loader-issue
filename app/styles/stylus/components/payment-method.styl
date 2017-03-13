@@ -1,0 +1,91 @@
+.payment-method
+  &-list
+    list-style none
+    display flex
+    flex-direction row
+    justify-content flex-start
+    align-items center
+    margin-top 1rem
+
+  &-item
+    width 1.14rem
+    height 1.14rem
+    margin-right .7rem
+    background url("sprites.png") no-repeat 0 0
+
+    &--visa,
+    &--mastercard,
+    &--paypal,
+    &--yandex_money,
+    &--webmoney,
+    &--euroset,
+    &--bank_masterbank,
+    &--qiwi,
+    &--american,
+    &--jcb,
+    &--diners,
+    &--money,
+    &--bank
+      @extend .payment-method-item
+
+    &--visa
+      width 2rem
+      background-position 0 -246px
+
+    &--mastercard
+      width 2rem
+      background-position 0 -443px
+
+    &--webmoney
+      width 1.14rem
+      background-position 0 -509px
+
+    &--euroset
+      width 1.14rem
+      background-position 0 -575px
+
+    &--qiwi
+      width 1.2rem
+      background-position 0 -641px
+
+    &--yandex_money
+      width 1rem
+      background-position 0 -707px
+
+    &--bank_masterbank
+      width 1.5rem
+      background-position 0 -378px
+
+    &--bank_masterbank_2
+      width 3.4rem
+      background-position 0 -839px
+
+    &--unikassa
+      width 1.14rem
+      background-position 0 -773px
+
+    &--money
+      width 1.14rem
+      background-position 0 -905px
+
+    &--bank
+      width 1.14rem
+      background-position 0 -312px
+
+    &--paypal
+      width 2.5rem
+      background-position -80px -440px
+
+    &--american
+      width 1.14rem
+      background-position -80px -508px
+
+    &--jcb
+      width 1.64rem
+      background-position -123px -508px
+
+    &--diners
+      width 1.85rem
+      background-position -166px -508px
+
+

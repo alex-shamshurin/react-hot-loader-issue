@@ -1,0 +1,39 @@
+@import "../../../../styles/stylus/style.styl"
+
+//Error in css-loader, cannot find urls in css module
+:global
+  .wrapper
+    display flex
+    flex-direction column
+    height 100%
+
+  .container
+    max-width 1380px
+    margin 0 auto
+    padding 0 55px
+    overflow hidden
+
+    +below(1000px)
+      padding 0 35px
+
+    +below($media-screen-sm)
+      padding 0 4%
+
+  .content
+    flex 1 0 auto
+
+  .page
+    position relative
+    z-index 2
+    background $base-bg-color
+    overflow hidden
+
+    +below($media-screen-sm)
+      margin-top 100vh
+
+    .price-block
+      letter-spacing -1px
+      white-space nowrap
+
+      span
+        font-family "Roboto", sans-serif

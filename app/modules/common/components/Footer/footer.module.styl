@@ -1,0 +1,82 @@
+.footer
+  flex 0 0 auto
+  padding 2rem 0
+  color white
+  background linear-gradient(to bottom, #ffcc00 0%, #ffbb00 100%)
+  position relative
+  z-index 2
+  
+  &-tel
+  &-tel:hover
+    white-space pre
+    text-decoration none
+    color white
+
+  &-nav
+    display flex
+    flex-direction row
+    justify-content flex-start
+    align-items center
+    list-style none
+
+  &-block
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items stretch
+
+    +below($media-screen-sm)
+      display block
+
+  &-order
+    display block
+    position relative
+    font-size 2rem
+    color white
+    text-decoration none
+    opacity .85
+    margin-bottom 1.5rem
+    padding-left 3.2rem
+    border-bottom 0
+
+    &:visited
+      color white
+
+    &:hover
+      opacity 1
+      color white
+
+    &:before
+      content ""
+      display block
+      width 2.7rem
+      height 2.7rem
+      position absolute
+      top 50%
+      left 0
+      margin-top -1.35rem
+      background url("icons/footer-order.png") no-repeat center
+      background-size contain
+
+  &-phone
+    font-size 2rem
+    padding-left 3.5rem
+    background url("icons/footer-phone.png") no-repeat left top
+    background-size auto 2.5rem
+    margin-bottom 1.5rem
+    min-height 2.5rem
+
+  &-menu
+    display flex
+    flex-direction row
+    justify-content flex-start
+    align-items flex-start
+    list-style none
+    margin-bottom 1rem
+
+    &-link
+      margin-right 2rem
+
+      a
+        color white
+        border-bottom-color rgba(255, 255, 255, .2)

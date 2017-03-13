@@ -1,0 +1,117 @@
+ks-no-conflict = true
+$outline-color = black
+@import kouto-swiss
+
+//normalize
+ks-normalize()
+
+:global
+  @import base
+  @import components
+
+  if $components-animations
+    @import "helpers/animations.styl"
+
+  if $components-debug
+    @import "helpers/debug.styl"
+
+  if $component-debug-div
+    @import "helpers/debug-block.styl"
+
+//////////////////////////////////////////////////////////
+// Base styles: opinionated defaults
+////////////////////////////////////////////////////////////
+
+//border-box to box
+ks-box-sizing-reset()
+
+main, footer, header
+  display block
+  position relative
+
+::selection
+  background #b3d4fc
+  text-shadow none
+
+// Remove the gap between audio, canvas, iframes,
+// images, videos and the bottom of their containers:
+// https://github.com/h5bp/html5-boilerplate/issues/440
+
+audio
+canvas
+iframe
+img
+svg
+video
+  vertical-align middle
+
+menu,
+ol,
+ul
+  padding 0
+
+
+dd
+p
+ul
+  margin 0
+
+
+// Remove default fieldset styles.
+fieldset
+  border 0
+  margin 0
+  padding 0
+
+// Allow only vertical resizing of textareas.
+textarea
+  resize vertical
+
+
+.ie7 .title
+  padding-top 20px
+
+h1,
+h2,
+h3,
+h4,
+h5
+  &:first-letter
+    text-transform uppercase
+
+//*
+//  outline none
+
+a
+  color $link-color
+  text-decoration underline
+
+  &:hover,
+  &:active
+    color $link-hover-color
+
+html,
+body
+  min-height 100vh
+
+html
+  font-size $base-font-size
+
+  +below(1200px)
+    font-size 12px !important
+
+  +below($media-screen-sm)
+    font-size 11px !important
+
+body
+  font-family $base-font-family
+  font-size $base-font-size
+  font-weight $base-font-weight
+  line-height $base-line-height
+  background $base-bg-color
+
+button
+  font-family $base-font-family
+
+
+

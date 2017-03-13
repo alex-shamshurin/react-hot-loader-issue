@@ -1,0 +1,92 @@
+.banner
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  height 6.5rem
+  background linear-gradient(to right, #ec2027 50%,#a09c8c 50%)
+  overflow hidden
+  
+  +below($media-screen-sm)
+    display none
+  
+  &--help
+    @extend .banner
+    display block
+    height auto
+    background none
+    text-align left
+    
+    +below($media-screen-sm)
+      display none
+  
+  a
+    display block
+    border-bottom 0 !important
+    
+    img
+      display block
+      max-width 100%
+
+.ticket--banner
+  display block
+  text-decoration none
+  line-height 1
+  margin-bottom 1rem
+  overflow hidden
+  position relative
+  left -2%
+  
+  +below($media-screen-sm)
+    left 0
+    
+  +below(1000px)
+    left 0
+  
+  .ticket
+    &-head
+      +below($media-screen-sm)
+        padding 1rem 0 1rem
+        
+    &-period
+      +below($media-screen-sm)
+        float none
+        width auto
+        padding 0 4% !important
+        font-size 1rem
+        
+      padding 3.05rem 0
+      font-size 1.28rem
+      text-align center
+      
+      .icon-blabla
+        position relative
+        left 50%
+        margin-left -5.425rem
+        
+      .icon-poezd
+        position relative
+        left 50%
+        margin-left -4.175rem
+        
+      +below($media-screen-sm)
+        .icon-poezd,
+        .icon-blabla
+          margin-bottom .5rem
+          
+    &-price
+      +below($media-screen-sm)
+        margin-top 0 !important
+        padding-bottom 0 !important
+        
+    &-line
+      color #767879
+      
+      &:before,
+      &:after
+        display none
+        
+      +below($media-screen-sm)
+        float none
+        width auto
+        margin 0 0 .5rem !important

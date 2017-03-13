@@ -1,0 +1,33 @@
+if $media-enable-debug
+  body:before
+    display block
+    position fixed
+    left 0
+    bottom 0
+    background #fff
+    z-index 101
+    color #000
+    padding 10px
+    border 1px solid silver
+    border-radius 2px
+
+@media only screen
+  @media (min-width: $media-screen-xs)
+    if $media-enable-debug
+      body:before
+        content "min-width: $media-screen-xs"
+
+  @media (max-width: $media-screen-sm)
+    if $media-enable-debug
+      body:before
+        content "min-width: $media-screen-sm"
+
+  @media (min-width: $media-screen-md)
+    if $media-enable-debug
+      body:before
+        content "min-width: $media-screen-md"
+
+  @media (min-width: $media-screen-lg)
+    if $media-enable-debug
+      body:before
+        content "min-width: $media-screen-lg"

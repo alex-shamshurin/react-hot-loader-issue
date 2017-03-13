@@ -1,0 +1,38 @@
+.button
+  display inline-block
+  background #437fbf
+  font-size 1.5rem
+  color #fff !important
+  padding 1rem 6.2rem 1.2rem
+  border-radius 35px
+  box-shadow 0 4px 5px 0 rgba(0, 0, 0, .1)
+  text-decoration none
+  cursor position
+
+  +below($media-screen-sm)
+    display block
+    padding 1.2rem 6.2rem 1.4rem
+    text-align center
+
+  &:hover
+    background #3e8ed2
+    color #fff
+    box-shadow 0 4px 10px 0 rgba(56, 149, 247, .37)
+
+  &:active,
+  &:focus
+    background #3f75af
+    box-shadow 0 2px 5px 0 rgba(0, 0, 0, .1)
+
+  &--cancell
+    color #924242 !important
+    border 1px solid #d2a9a9
+    background #fff
+    padding .7rem 3.35rem
+    font-size 1.28rem
+
+    &:hover,
+    &:active,
+    &:focus
+      background #d2a9a9
+      color #fff !important
